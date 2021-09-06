@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    <body>
+<section class="header">
+<nav>
+    <a href="index.html"><img src="images/logo.png"></a>
+    <div class="nav-links" id="navlinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">SERVICES </a></li>
+            <li><a href="">CONTACT</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="login page-1.html">LOGIN</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showemenu()"></i>
+</nav>
+</section>
+<div class="text-box">
+    <h1>GET IT DONE AT A SNAP OF A FINGER</h1>
+    <p>Making website is now one of the easiest thing in the world.You
+        just need to learn HTML,CSS,<br>Javascript and you are good to go.
+    </p>
+    <div class="form-box">
+        <input class="search-filed skills" name="search" type="text" placeholder="What are you looking for..."/>
+        <button class="search-btn" type="button">search</button>
+    </div>
+</div>
+
+</section>
+
+<!-----Course---->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>We offer different type of courses</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Graphic Design</h3>
+            <p>course content.</p>
+        </div>
+        <div class="course-col">
+            <h3>Web Development</h3>
+            <p>course content.</p>
+        </div>
+        <div class="course-col">
+            <h3>Content Creator</h3>
+            <p>course content.</p>
+        </div>
+    </div>
+</section>
+
+<!-----services------>
+<section class="our-services">
+    <h1>OUR SERVICES</h1>
+    <p>We offer different Types Of SERVICES</p>
+    <div class="row">
+        <div class="services-col">
+            <img src="images/Asset 8@6x.png">
+        </div>
+        <div class="services-col">
+            <img src="images/Asset 7@6x.png">
+        </div>
+        <div class="services-col">
+            <img src="images/Asset 6@6x.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="services-col">
+            <img src="images/Asset 5@6x.png">
+        </div>
+        <div class="services-col">
+            <img src="images/Asset 4@6x.png">
+        </div>
+        <div class="services-col">
+            <img src="images/Asset 10@6x.png">
+        </div>
+    </div>
+
+</section>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>About us text</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+</section>
+<!------javaScript for Toggel Menu---->
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showemenu(){
+        navlinks.style.right = "0";
+    }
+    function hidemenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
