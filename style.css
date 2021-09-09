@@ -118,6 +118,7 @@ border: none;
     background: #2868f1;
     border: none;
     color: #fff;
+    justify-content: center;
 }
 .search-btn:hover{
     background: #0e4dd4;
@@ -268,11 +269,12 @@ button{
     padding: 0 10px;
     box-sizing: border-box;
     outline: none;
+    display: block ;
     color: #fff;
     cursor: pointer;
 }
 .submit-btn{
-    position: relative;
+    position:inherit;
 }
 
 span{
