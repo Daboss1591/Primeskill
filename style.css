@@ -194,20 +194,25 @@ width: 100%;
 
 .container{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     font-family: sans-serif;
+    background: rgba(162, 162, 165, 0.8);
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(rgba(0,0,100,0.8),rgba(0,0,100,0.8)),url(images/wallpaper.jpg);
 }
+
 .card{
+    border-radius: 25px;
     width: 350px;
-    background: #2868f1;
     height: 500px;
     box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
     perspective: 1000px;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/work.jpg);
+
 }
 .inner-box{
     position: relative;
@@ -216,15 +221,12 @@ width: 100%;
     transform-style: preserve-3d;
     transition: 1s;
 }
-.card-front, .card-back{
+.card-front,.card-back{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),url(images/wallpaper.jpg);
     padding: 55px; 
-    box-sizing: border-box;
+    box-sizing: border-box; 
     backface-visibility: hidden;
 }
 .card-back{
@@ -253,7 +255,7 @@ width: 100%;
 }
 ::placeholder{
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
 }
 button{
     width: 100px;
@@ -261,7 +263,7 @@ button{
     border: 1px solid #fff;
     margin: 35px 0 10px;
     height: 32px;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 20px;
     padding: 0 10px;
     box-sizing: border-box;
@@ -272,19 +274,7 @@ button{
 .submit-btn{
     position: relative;
 }
-.submit-btn::after{
-    content: '\27a4';
-    color: #333;
-    line-height: 32px;
-    font-size: 17px;
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    right: -1px;
-    top: -1px;
-}
+
 span{
     font-size: 13px;
     margin-left: 10px;
