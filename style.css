@@ -10,7 +10,7 @@
 header{
     height: 100vh;
     width: 100%;
-    background-image: url(images/header.png);
+    background-image:  linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/work.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -42,34 +42,35 @@ nav ul li a:hover{
 /*--------text box------*/
 .text-box{
     text-align: center;
+    padding-top: 65px;
 }
 .text-box h1{
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: white;
+    font-size: 80px;
     letter-spacing: 1px;
 }
 .text-box h3{
 letter-spacing: 2px;
-color: #1B2236;
+color: #fff;
 }
 /*------end of text-box----*/
 
 /*------search box----*/
 .search-box{
-    width: 380px;
-    max-width: 100%;
-    position: relative;
+margin-top: 15px;
+margin-left: 10px;
 }
 .search-box input:first-child{
-    display: inline-block ;
-    width: 100%;
+    display: inline-block;
+    width: 25%;
     padding: 14px 130px 14px 15px;
     border: 2px solid #8AA7C5;
     outline: none;
     border-radius: 30px;
 }
 .search-box input:last-child{
-    position: absolute;
+    position: relative;
     display: inline-block;
     outline: none;
     border: none;
@@ -78,8 +79,7 @@ color: #1B2236;
     background-color: #8AA7C5;
     color: white;
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #8AA7C5;
-    top: 6px;
-    right: 6px;
+    right: 123px;
 }
 /*-----search-box end-----*/
 /*-----logo----*/
@@ -94,6 +94,122 @@ span{
 }
 /*------logo end----*/
 
+/*------services----*/
+.Our-services{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #191919;
+    text-align: center;
+}
+.row{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.Our-services .row{
+    font-size: 35px;
+    margin: 60px;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.Our-services h3{
+    text-transform: capitalize;
+    color: white;
+    padding-bottom: 35px;
+    font-size: 45px;
+}
+.Our-services .row:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/*-------course-----*/
+#course{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgb(0,0 0,0.05);
+}
+.course-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.course-heading h3{
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+.course-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.course-box{
+    width: 350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+}
+.course-img{
+    width: 100%;
+    height: auto;
+}
+.course-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.course-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.course-text span{
+    color: #8AA7C5;
+    font-size: 0.9rem;
+}
+.course-text .course-title{
+font-size: 1.9rem;
+font-weight: 500;
+color: #272727;
+text-decoration: none;
+}
+.course-text .course-title:hover{
+    color: #8AA7C5;
+    transition: all ease 0,3s;
+}
+.course-text{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.course-text a{
+    cursor: pointer;
+    color: #0f0f0f;
+    text-decoration: none;
+}
+.course-text:hover{
+    color: #8AA7C5;
+    transition: all ease0.3s;
+}
 /*-----------Login page-----*/
 
 .container{
