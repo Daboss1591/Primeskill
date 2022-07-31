@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     font-family: 'Noto Serif', serif;
@@ -125,6 +125,9 @@ span{
 .Our-services .row:hover{
     cursor: pointer;
     transform: scale(1.2);
+}
+.Our-services:hover{
+    box-shadow: 0 0 20px #8AA7C5;
 }
 
 /*-------course-----*/
