@@ -1,5 +1,5 @@
-@import url('http://font.googleapis.com/ css2?family=Poppins:wght@200;300;400;500;600;700;800;900;1000;1100;1200&display=swap');
 *{
+    @import url('http://font.googleapis.com/ css2?family=Poppins:wght@200;300;400;500;600;700;800;900;1000;1100;1200&display=swap');
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -127,6 +127,9 @@ span{
 .Our-services .row:hover{
     cursor: pointer;
     transform: scale(1.2);
+}
+.Our-services:hover{
+    box-shadow: 0 0 20px #8AA7C5;
 }
 
 /*-------course-----*/
