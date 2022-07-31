@@ -1,115 +1,43 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeskill</title>
-    <link rel="shortcut icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-    <body>
-<section class="header">
-<nav>
-    <a href="index.html"><img src="images/logo.png"></a>
-    <div class="nav-links" id="navlinks">
-        <i class="fa fa-times" onclick="hidemenu()"></i>
-        <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">BLOG</a></li>
-            <li><a href="">COURSE</a></li>
-            <li><a href="">SERVICES </a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="">ABOUT US</a></li>
-            <li><a href="Login.html">LOGIN</a></li>
-        </ul>
-    </div>
-    <i class="fa fa-bars" onclick="showemenu()"></i>
-</nav>
-</section>
-<div class="text-box">
-    <h1>GET IT DONE AT A SNAP OF A FINGER</h1>
-    <p>Making website is now one of the easiest thing in the world.You
-        just need to learn HTML,CSS,<br>Javascript and you are good to go.
-    </p>
-    <div class="form-box">
-        <input class="search-filed skills" name="search" type="text" placeholder="What are you looking for..."/>
-        <button class="search-btn" type="button">search</button>
-    </div>
-</div>
-
-</section>
-
-<!-----Course---->
-<section class="course">
-    <h1>Courses We Offer</h1>
-    <p>We offer different type of courses</p>
-
-    <div class="row">
-        <div class="course-col">
-            <h3>Graphic Design</h3>
-            <p>course content.</p>
+<body>
+<header>
+    <nav>
+        <h2 class="logo">Prime<span>skill</span></h2>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">COURSE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
         </div>
-        <div class="course-col">
-            <h3>Web Development</h3>
-            <p>course content.</p>
-        </div>
-        <div class="course-col">
-            <h3>Content Creator</h3>
-            <p>course content.</p>
+    </nav>
+    <div class="text-box">
+        <h1>get it done at a snap of a finger</h1>
+        <h3>Designing a website is now one of the easiest thing in the world.You
+            just need to learn HTML,CSS,<br>JAVASCERIPT and you good to go.
+        </h3>
+        <div class="search-box">
+            <form>
+                <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+                <input type="submit" name="submit" value="Lets Start">
+            </form>
         </div>
     </div>
-</section>
-
-<!-----services------>
-<section class="our-services">
-    <h1>OUR SERVICES</h1>
-    <p>We offer different Types Of SERVICES</p>
-    <div class="row">
-        <div class="services-col">
-            <img src="images/Asset 8@6x.png">
-        </div>
-        <div class="services-col">
-            <img src="images/Asset 7@6x.png">
-        </div>
-        <div class="services-col">
-            <img src="images/Asset 6@6x.png">
-        </div>
-    </div>
-    <div class="row">
-        <div class="services-col">
-            <img src="images/Asset 5@6x.png">
-        </div>
-        <div class="services-col">
-            <img src="images/Asset 4@6x.png">
-        </div>
-        <div class="services-col">
-            <img src="images/Asset 10@6x.png">
-        </div>
-    </div>
-
-</section>
-
-<section class="footer">
-    <h4>About Us</h4>
-    <p>About us text</p>
-    <div class="icons">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
-        <i class="fa fa-linkedin"></i>
-    </div>
-</section>
-<!------javaScript for Toggel Menu---->
-<script>
-    var navlinks = document.getElementById("navlinks");
-
-    function showemenu(){
-        navlinks.style.right = "0";
-    }
-    function hidemenu(){
-        navlinks.style.right = "-200px";
-    }
-</script>
-
+</header>  
 </body>
 </html>
