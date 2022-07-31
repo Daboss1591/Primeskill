@@ -294,7 +294,7 @@ button{
     position:relative;
 }
 .submit-btn::after{
-    content: "/27a4";
+    content: "\27a4";
     color: rgb(12, 12, 12);
     line-height: 32px;
     font-size: 20px;
@@ -349,6 +349,8 @@ span{
 .contact .content p
 {
     font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
     color: #fff;
 }
 .container
@@ -366,7 +368,7 @@ span{
     width: 50px;
     display: flex;
     flex-direction: column;
-    margin-right: 280px;
+    margin-right: 300px;
 }
 .container .contactInfo .box
 {
@@ -375,11 +377,20 @@ span{
     display: flex;
     align-items: center;
 }
+.contactInfo a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.icon
+{
+    color: rgb(16, 17, 17);
+    align-items: center;
+}
 .container .contactInfo .box .icon
 {
     min-width: 60px;
     height: 60px;
-    color: #333;
     background: #fff;
     display: flex;
     justify-content: center;
@@ -391,15 +402,16 @@ span{
 {
     display: flex;
     margin-left: 20px;
-    font-size: 16px;
-    color: rgb(255, 255, 255);
+    font-size: 13px;
+    color: #fff;
     flex-direction: column;
     font-weight: 300;
 }
 .container .contactInfo .box .text h3
 {
-    font-weight: 500;
-    color: #fff;
+    font-weight: 800;
+    font-size: 23px;
+    color: #8d0101;
     text-align: 30px;
 }
 
@@ -429,7 +441,7 @@ span{
     font-size: 16px;
     margin: 10px 0;
     border: none;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid rgb(17, 17, 17);
     outline: none;
     resize: none;
 }
@@ -449,19 +461,20 @@ span{
 .contactForm .textarea input:focus ~ span,
 .contactForm .textarea input:valid ~ span
 {
-    color: #0080b3;
+    color: #8d0101;
     font-size: 12px;
     transform: translateY(-20px);
 }
 .contactForm .InputBox input[type="submit"]
 {
     width: 100px;
-    background: #00bcd4;
+    background: #8d0101;
     color: #fff;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
+    text-align: center;
 } 
 @media (max-width: 991px)
 {
