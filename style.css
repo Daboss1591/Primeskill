@@ -8,7 +8,7 @@
 header{
     height: 100vh;
     width: 100%;
-    background-image: url(images/header.png);
+    background-image:  linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/work.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -40,34 +40,35 @@ nav ul li a:hover{
 /*--------text box------*/
 .text-box{
     text-align: center;
+    padding-top: 65px;
 }
 .text-box h1{
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: white;
+    font-size: 80px;
     letter-spacing: 1px;
 }
 .text-box h3{
 letter-spacing: 2px;
-color: #1B2236;
+color: #fff;
 }
 /*------end of text-box----*/
 
 /*------search box----*/
 .search-box{
-    width: 380px;
-    max-width: 100%;
-    position: relative;
+margin-top: 15px;
+margin-left: 10px;
 }
 .search-box input:first-child{
     display: inline-block;
-    width: 100%;
+    width: 25%;
     padding: 14px 130px 14px 15px;
     border: 2px solid #8AA7C5;
     outline: none;
     border-radius: 30px;
 }
 .search-box input:last-child{
-    position: absolute;
+    position: relative;
     display: inline-block;
     outline: none;
     border: none;
@@ -76,8 +77,7 @@ color: #1B2236;
     background-color: #8AA7C5;
     color: white;
     box-shadow: 0px 0px 5px #000, 0px 0px 15px #8AA7C5;
-    top: 6px;
-    right: 6px;
+    right: 123px;
 }
 /*-----search-box end-----*/
 /*-----logo----*/
@@ -92,6 +92,40 @@ span{
 }
 /*------logo end----*/
 
+/*------services----*/
+.Our-services{
+    width: 100%;
+    padding: 50px 0px;
+    background-color: #191919;
+    text-align: center;
+}
+.row{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+.Our-services .row{
+    font-size: 35px;
+    margin: 60px;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.Our-services h3{
+    text-transform: capitalize;
+    color: white;
+    padding-bottom: 35px;
+    font-size: 45px;
+}
+.Our-services .row:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
 /*-----------Login page-----*/
 
 .container{
