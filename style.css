@@ -482,17 +482,31 @@ span{
         width: 100%;
     }
 }
+
+/*---------login end-------*/
+
+
 /*-------footer-----*/
 .footer{
     width: 100%;
     text-align: center;
     padding: 34px 0;
+    background-color: #272727;
+}
+.footer-container ul{
+    list-style: none;
+}
+.footer-container ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
 }
 .footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
 }
+.footer-col
 .icons.fa{
 color: #2868f1;
 margin: 0 13px;
@@ -500,4 +514,6 @@ cursor: pointer;
 padding: 18px 0;
 }
 
-/*---------login end-------*/
+/*-------footer-----*/
+
+
