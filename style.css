@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-@import url('http://font.googleapis.com/ css2?family=Poppins:wght@200;300;400;500;600;700;800;900;1000;1100;1200&display=swap');
-=======
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
->>>>>>> a0a9c87e3c32c884431eedb7dd845b398fe1188e
 *{
     margin: 0;
     padding: 0;
@@ -295,7 +291,6 @@ text-decoration: none;
     padding: 10px;
 } 
 
-<<<<<<< HEAD
 .footer-col .social-links a{
     display: inline-block;
     height: 40px;
@@ -312,8 +307,6 @@ text-decoration: none;
     color: #24262b;
     background-color: #ffffff;
 }
-=======
-<<<<<<< HEAD
 @media (max-width: 991px)
 {
     .contact{
