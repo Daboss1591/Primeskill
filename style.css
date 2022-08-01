@@ -233,17 +233,314 @@ text-decoration: none;
     transition: all ease0.3s;
 }
 
+<<<<<<< HEAD
+=======
+.container{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: rgba(162, 162, 165, 0.8);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 25px;
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,0.26);
+    perspective: 1000px;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgb(4,9,30,0.7),rgb(4,9,30,0.7)),url(images/work.jpg);
+
+}
+.inner-box{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.card-front,.card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 55px; 
+    box-sizing: border-box; 
+    backface-visibility: hidden;
+}
+.card-back{
+    transform: rotateY(180deg);
+
+}
+.card h2{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 1.5px solid #fff;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 40px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #fff;
+}
+::placeholder{
+    color: #fff;
+    font-size: 15px;
+}
+button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 35px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+.submit-btn{
+    position:relative;
+}
+.submit-btn::after{
+    content: "\27a4";
+    color: rgb(12, 12, 12);
+    line-height: 32px;
+    font-size: 20px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #fff;
+    position:absolute;
+    right: -1px;
+    top: -1px;
+}
+span{
+    font-size: 13px;
+    margin-left: 10px;
+}
+.card .btn{
+    margin-top: 70px;
+}
+.card a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+/*---------contact page------*/
+.contact
+{
+    position:relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(images/cyber-scurity.jpg);
+    background-size: cover;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact .content p
+{
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #fff;
+}
+.container
+{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background: transparent;
+}
+.container .contactInfo
+{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+}
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.contactInfo a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.icon
+{
+    color: rgb(16, 17, 17);
+    align-items: center;
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 13px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 800;
+    font-size: 23px;
+    color: #8d0101;
+    text-align: 30px;
+}
+
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .InputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .InputBox input,
+.contactForm .InputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid rgb(17, 17, 17);
+    outline: none;
+    resize: none;
+}
+.contactForm .InputBox span
+{
+    position: absolute;
+    left: 0;
+    padding:  5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: rgb(24, 24, 23);
+}
+.contactForm .InputBox input:focus ~ span,
+.contactForm .InputBox input:valid ~ span,
+.contactForm .textarea input:focus ~ span,
+.contactForm .textarea input:valid ~ span
+{
+    color: #8d0101;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .InputBox input[type="submit"]
+{
+    width: 100px;
+    background: #8d0101;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+} 
+@media (max-width: 991px)
+{
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contactInfo{
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+}
+
+/*---------login end-------*/
+
+
+>>>>>>> ca42c9e92d3210c0dce189bff072d847ceadd60a
 /*-------footer-----*/
 .footer{
     width: 100%;
     text-align: center;
     padding: 34px 0;
+    background-color: #272727;
+}
+.footer-container ul{
+    list-style: none;
+}
+.footer-container ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
 }
 .footer h4{
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
 }
+.footer-col
 .icons.fa{
 color: #2868f1;
 margin: 0 13px;
@@ -251,6 +548,7 @@ cursor: pointer;
 padding: 18px 0;
 }
 
+<<<<<<< HEAD
 @media (max-width: 991px)
 {
     .contact{
@@ -268,3 +566,8 @@ padding: 18px 0;
     }
 }
 /*---------footer end-------*/
+=======
+/*-------footer-----*/
+
+
+>>>>>>> ca42c9e92d3210c0dce189bff072d847ceadd60a
