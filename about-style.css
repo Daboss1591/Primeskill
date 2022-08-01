@@ -1,0 +1,209 @@
+@import url('http://font.googleapis.com/ css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', 'Poppins', serif;
+}
+.section
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(71, 86, 107);
+}
+.container
+{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 100px;
+}
+.content-section
+{
+    float: left;
+    width: 55%;
+}
+.image-section
+{
+    float: right;
+    width: 40%;
+}
+.image-section img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.content-section .title
+{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+.content-section .content h3
+{
+    margin-top: 20px;
+    color: #161616;
+    font-size: 26px;
+}
+.content-section .content p
+{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.content-section .content .button
+{
+    margin-top: 30px;
+    
+}
+.content-section .content .button a
+{
+    background-color: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+}
+.content-section .content .button a:hover
+{
+    background-color: #aa0f0f;
+    color: #fff;
+}
+ul {
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-top: 19%;
+    padding:0;
+    display:flex;
+  }
+  
+  ul li {
+    list-style: none;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  ul li a {
+    position: relative;
+    width:60px;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 15px 10px rgba(9, 23, 37, 0.979);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+  }
+  
+  ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+  }
+  
+  ul li a .fab {
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+  }
+  
+  ul li:nth-child(1) a:hover .fab {
+    color: #12347e;
+  }
+  
+  ul li:nth-child(2) a:hover .fab {
+    color: #0055d4;
+  }
+  
+  ul li:nth-child(3) a:hover .fab {
+    font-weight: 1000;
+    color: #006e00;
+  }
+  
+  ul li:nth-child(4) a:hover .fab {
+    color: #ee032a;
+    font-weight: 800;
+  }
+  
+  ul li:nth-child(5) a:hover .fab {
+    color: #0055d4;
+  }
+
+.content-section .social
+{
+    margin: 40px 40px;
+}
+.content-section .social i
+{
+     color: #aa0f0f;
+     font-size: 34px;
+     padding: 0px 10px;
+}
+.content-section .social i:hover
+{
+    color: dodgerblue;
+}
+@media screen and (max-width: 768px)
+{
+    .container
+{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 50px;
+}
+    .content-section
+{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.image-section
+{
+    float: none;
+    width: 100%;
+}
+.image-section img
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto; 
+}
+.content-section .title
+{
+    text-align: center;
+    font-size: 19px;
+}
+.content-section .content .button
+{
+    text-align: center;
+}
+.content-section .content .button a
+{
+    padding: 9px 30px;
+}
+.content-section .social
+{
+    text-align: center;
+}
+
+}
