@@ -1,5 +1,5 @@
+@import url('http://font.googleapis.com/ css2?family=Poppins:wght@200;300;400;500;600;700;800;900;1000;1100;1200&display=swap');
 *{
-    @import url('http://font.googleapis.com/ css2?family=Poppins:wght@200;300;400;500;600;700;800;900;1000;1100;1200&display=swap');
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -500,33 +500,80 @@ span{
 
 
 /*-------footer-----*/
-.footer{
-    width: 100%;
-    text-align: center;
-    padding: 34px 0;
-    background-color: #272727;
+.footer-container{
+    max-width: 1170px;;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
 }
 .footer-container ul{
     list-style: none;
 }
-.footer-container ul li a{
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-}
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
+.footer{
+    padding: 70px 0;
+    background-color: #272727;
 }
 .footer-col
-.icons.fa{
-color: #2868f1;
-margin: 0 13px;
-cursor: pointer;
-padding: 18px 0;
+{
+    width: 25%;
+    padding: 0 15px;
 }
+.footer-col h4{
+    color: #ffffff;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 8;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    text-align: justify;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none; 
+  font-weight: 400;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+/*hover*/
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding: 10px;
+} 
 
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
 /*-------footer-----*/
 
 
