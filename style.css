@@ -237,7 +237,7 @@ text-decoration: none;
     max-width: 1170px;;
     margin: auto;
 }
-.row{
+.footer-row{
     display: flex;
     flex-wrap: wrap;
 }
@@ -250,8 +250,8 @@ text-decoration: none;
 }
 .footer-col
 {
-    width: 25%;
-    padding: 0 15px;
+    min-width: 33.3%;
+    padding: 0px 15px;
 }
 .footer-col h4{
     color: #ffffff;
@@ -269,7 +269,7 @@ text-decoration: none;
     background-color: #e91e63;
     height: 2px;
     box-sizing: border-box;
-    width: 50px;
+    width: 60px;
     text-align: justify;
 }
 .footer-col ul li:not(:last-child){
